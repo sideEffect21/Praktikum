@@ -4,14 +4,67 @@ Untuk permasalahan apakah surga ada atau tidak,\
 cukup bandingkan key surga yang diminta dengan key input bst
 
 /**
- * Implementasi Binary Search Tree (ADT: BST)
- * yakni BST yang tidak menyimpan key duplikat (unique key)
- * 
- * Dibuat dan ditulis oleh Bayu Laksana
- * -- tanggal 29 Februrari 2019
- * Struktur Data 2020
- * 
- * Implementasi untuk Bahasa C
+ Dan surga merupakan node yang memiliki key 7, maka cetaklah jalan (left or right), terpisah oleh new line, dari root node (8) menuju surga tersebut. Contoh kasus ini, berarti:
+
+LEFT
+
+RIGHT
+
+RIGHT.
+
+Jika tidak ada surga (tidak ada node yang memiliki nilai yang diminta), maka cetak "AHH MASUK NERAKA" dengan new line
+
+Input Format
+
+    Sebuah integer N
+    N baris berikutnya berisi bilangan-bilangan bulat a[i]...a[N] yang akan dimasukkan ke tree (bilangan pertama = root)
+    Selanjutnya integer b yang menandakan lokasi pintu SYURGA
+
+Constraints
+
+Output Format
+
+SELALU PRINT DENGAN NEW LINE
+
+Jika ada syurga cetak pathnya, jika tidak cetak "AHH MASUK NERAKA"
+
+Lihat sample testcase pasti ngerti
+
+Sample Input 0
+
+9
+8 3 10 1 6 14 4 7 13
+7
+
+Sample Output 0
+
+LEFT
+RIGHT
+RIGHT
+
+Explanation 0
+
+Strukutr bstnya
+
+image
+
+karena posisi surga ada di node yang keynya 7, maka pathnya LEFT, RIGHT, RIGHT.
+
+** NOTE: SURGA TIDAK MUNGKIN BERADA DI ROOT**
+
+Sample Input 1
+
+9
+8 3 10 1 6 14 4 7 13
+20
+
+Sample Output 1
+
+AHH AKU MASUK NERAKA
+
+Explanation 1
+
+Struktur tree sama seperti gambar diatas. Kali ini pintu surga yang dicari tidak ada sehingga dicetak AHH AKU MASUK NERAKA
  */
 
 #include <stdlib.h>
