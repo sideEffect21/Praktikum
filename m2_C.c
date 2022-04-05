@@ -1,5 +1,36 @@
 // Lakukan pencarian nilai pada BST untuk setiap nilai dari percabangan yang akan menjadi akar baru. \
-Kemudian, lakukan transversal preorder dari node yang telah ditemukan.
+//Kemudian, lakukan transversal preorder dari node yang telah ditemukan.
+/*
+Yuta ingin memecah pohon tuanya yang terlalu besar menjadi beberapa pohon yang lebih kecil. Ia ingin beberapa percabangan pada pohon tersebut menjadi akar dari pohon yang baru. Agar ia tidak salah memecah pohonnya, bantulah Yuta dengan membuatkan program yang akan menunjukkan bentuk pohon jika suatu percabangan menjadi akarnya.
+
+Input Format
+
+Sebuah baris yang berisi bilangan T yang menyatakan banyaknya bilangan N, diikuti dengan sebaris deret N bilangan yang akan menjadi pohon besar Yuta. Kemudian diikuti pada baris dibawahnya dengan bilangan Q yang menyatakan banyaknya percabangan yang akan menjadi akar dari pohon baru, dan diikuti dengan Q baris bilangan N yang akan menjadi akar dari pohon baru.
+
+Constraints
+
+1 ≤ T, N ≤ 1000
+
+1 ≤ Q ≤ 10
+
+Output Format
+
+Q baris yang berisi hasil transversal preorder dari masing-masing pohon baru tersebut.
+
+Sample Input 0
+
+7
+5 2 1 4 3 6 7
+2
+2
+6
+
+Sample Output 0
+
+2 1 4 3 
+6 7 
+
+*/
 
 #include <stdlib.h>
 #include <stdbool.h>
