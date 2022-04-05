@@ -1,3 +1,40 @@
+/*
+Kali ini, Yuta ingin mengembangkan caranya untuk memperbesar nilai suatu bilangan hanya dengan mengubah susunan bitnya. 
+dengan cara demikian, bantulah Yuta menulis program untuk mengetahui potensi dari suatu bilangan
+(bilangan terbesar yang dapat dibentuk dari susunan bilangan biner).
+
+Input Format
+
+Sebuah baris yang berisi bilangan T yang menyatakan banyaknya bilangan N,
+diikuti dengan T baris yang berisi bilangan N yang akan dicari potensi.
+
+Constraints
+
+    1 ≤ T, N ≤ 1000
+
+Output Format
+
+T Baris yang masing-masing berisi potensi terbesar dari bilangan N.
+
+Sample Input 0
+
+2
+7
+18
+
+Sample Output 0
+
+7
+24
+
+Explanation 0
+
+Bilangan 7 memiliki bentuk biner 111, sehingga potensinya juga akan 111 (7). 
+Sementara itu, 18 memiliki bentuk biner 10010, kemungkinan bilangan terbesar yang didapat dari susunan biner tersebut adalah 11000 (24).
+*/
+
+
+
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
