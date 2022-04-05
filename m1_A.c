@@ -1,3 +1,36 @@
+// Cukup buat tiga stack, yaitu KOTOR, SABUN, BERSIH. Setelah itu, perform sesuai perintah soal saja. 
+//CLEAN: Pindakan 1 piring dari kotor ke sabun RINSE: Pindahkan 1 piring dari sabun ke bersih BURST N: Pindahkan N piring dari kotor ke bersih,\
+//kalau N lebih banyak dari isi stack, pindahkan seluruh isi stack\
+
+/*
+INPUT 
+7
+1 2 3 4 5 6 7
+15
+CLEAN
+CLEAN
+CLEAN
+CLEAN
+RINSE
+RINSE
+RINSE
+CLEAN
+CLEAN
+RINSE
+CLEAN
+RINSE
+RINSE
+CLEAN
+CLEAN
+
+OUTPUT
+KOTOR: 0
+SABUN: 7 
+BERSIH: 3 1 2 6 5 4 
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
