@@ -1,7 +1,191 @@
 // Cukup sederhana. Pertama, buatlah struct siswa dengan attribut nama,\
- nilai fisika, matematika, karate, dan nilai rerata. Selanjutnya, hanya perlu memasukkan nilai\
-  rerata pada binary search tree dan menambahkan key berupa index pada tree sebagai refrence pada struct  
+// nilai fisika, matematika, karate, dan nilai rerata. Selanjutnya, hanya perlu memasukkan nilai\
+ // rerata pada binary search tree dan menambahkan key berupa index pada tree sebagai refrence pada struct  
 //Sisanya hanya perlu melakukan traversal pre,in,dan post order dan mencetak attribut yang diminta.
+   /*
+   Sekolah "Chuck No" merupakan sekolah yang berprestasi. Suatu hari, kepala sekolah Luis Chuck Norris mengutus setiap wali kelas untuk mendata nilai siswa pada struktur data binary search tree. Wali kelas disana tidak begitu paham dengan ADT Binary Search Tree sehingga mereka meminta kalian untuk membuatnya.
+
+Diberikan N jumlah space-seperated input yang satu kesatuan inputnya mengandung :
+
+    Nama Siswa
+    Nilai Fisika
+    Nilai Matematika
+    Nilai Karate (Pencak Silat Jepang)
+
+NOTE: atribut nama merupakan nama panggilan
+
+dengan input pada Binary Search Tree dilakukan secara terurut (data pertama sebagai root) dan asas posisi data siswa ditentukan berdasarkan nilai rata-rata siswa.
+
+Cetak lah nama siswa, nilai fisika, matematika, karate serta nilai rata-rata dalam urutan preorder, inorder, dan postorder dengan format output yang akan dijelaskan pada bagian output format.
+
+Input Format
+
+N jumlah space-seperated input yang satu kesatuan inputnya mengandung:
+
+    Nama Siswa
+    Nilai Fisika
+    Nilai Matematika
+    Nilai Karate (Pencak Silat Jepang)
+
+NOTE: atribut nama merupakan nama panggilan
+
+Constraints
+
+Output Format
+
+================ ('=' berjumlah 16)
+
+PRE ORDER
+
+Nama: [nama siswa1]
+
+Fisika: [nilai fisika siswa 1]
+
+Matematika: [nilai matematika siswa 1]
+
+Karate: [nilai karate siswa 1]
+
+Rerata: [nilai rata-rata siswa 1]
+
+........
+
+Nama: [nama siswa-N]
+
+Fisika: [nilai fisika siswa-N]
+
+Matematika: [nilai matematika siswa-N]
+
+Karate: [nilai karate siswa-N]
+
+Rerata: [nilai rata-rata siswa-N]
+
+================ ('=' berjumlah 16)
+
+IN ORDER
+
+Nama: [nama siswa1]
+
+Fisika: [nilai fisika siswa 1]
+
+Matematika: [nilai matematika siswa 1]
+
+Karate: [nilai karate siswa 1]
+
+Rerata: [nilai rata-rata siswa 1]
+
+........
+
+Nama: [nama siswa-N]
+
+Fisika: [nilai fisika siswa-N]
+
+Matematika: [nilai matematika siswa-N]
+
+Karate: [nilai karate siswa-N]
+
+Rerata: [nilai rata-rata siswa-N]
+
+================ ('=' berjumlah 16)
+
+POST ORDER
+
+Nama: [nama siswa1]
+
+Fisika: [nilai fisika siswa 1]
+
+Matematika: [nilai matematika siswa 1]
+
+Karate: [nilai karate siswa 1]
+
+Rerata: [nilai rata-rata siswa 1]
+
+........
+
+Nama: [nama siswa-N]
+
+Fisika: [nilai fisika siswa-N]
+
+Matematika: [nilai matematika siswa-N]
+
+Karate: [nilai karate siswa-N]
+
+Rerata: [nilai rata-rata siswa-N]
+
+NOTE: NILAI RATA-RATA DIJAMIN UNIQUE
+
+Sample Input 0
+
+3
+Rai 100 100 100
+Sugeng 75 70 80
+Pedro 90 90 30
+
+Sample Output 0
+
+================
+PRE ORDER
+Nama: Rai
+Fisika: 100.00
+Matematika: 100.00
+Karate: 100.00
+Rerata: 100.00
+
+Nama: Sugeng
+Fisika: 75.00
+Matematika: 70.00
+Karate: 80.00
+Rerata: 75.00
+
+Nama: Pedro
+Fisika: 90.00
+Matematika: 90.00
+Karate: 30.00
+Rerata: 70.00
+
+================
+IN ORDER
+Nama: Pedro
+Fisika: 90.00
+Matematika: 90.00
+Karate: 30.00
+Rerata: 70.00
+
+Nama: Sugeng
+Fisika: 75.00
+Matematika: 70.00
+Karate: 80.00
+Rerata: 75.00
+
+Nama: Rai
+Fisika: 100.00
+Matematika: 100.00
+Karate: 100.00
+Rerata: 100.00
+
+================
+POST ORDER
+Nama: Pedro
+Fisika: 90.00
+Matematika: 90.00
+Karate: 30.00
+Rerata: 70.00
+
+Nama: Sugeng
+Fisika: 75.00
+Matematika: 70.00
+Karate: 80.00
+Rerata: 75.00
+
+Nama: Rai
+Fisika: 100.00
+Matematika: 100.00
+Karate: 100.00
+Rerata: 100.00
+
+Explanation 0
+
+Rerata didapat dari jumlah nilai fisika, matematika, karate.
+*/
 
 #include <stdlib.h>
 #include <stdbool.h>
