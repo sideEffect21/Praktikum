@@ -20,6 +20,46 @@ Output Format
 
 untuk queri 2, jika barang tidak ada print "Tidak ada di gudang"
 untuk queri 3, jika barang ada print index dari barang, jika tidak ada print "Tidak ada di gudang"
+karena bantuan kalian, mamat telah diangkat sebagai manager di gudang perusahaan nya. tugas nya adalah mencatat semua barang yang disimpan. setiap barang akan diletakan disuatu tempat dengan index tertentu, namun index tersebut akan berubah setiap kali ada barang baru yang masuk atau ada barang yang keluar. karena hal tersebut, mamat kesulitan akan pekerjaan dia sebagai manager. kamu sebagai programmer handal diminta tolong oleh mamat untuk membantu nya dalam mengatur letak dari barang barang tersebut. note: untuk index bisa menggunakan inorder.
+
+Input Format
+
+baris pertama Q queri yang dilakukan
+baris selanjut nya berisi queri queri tertentu:
+1 N: memasukan barang N ke dalam list
+2 N: mengeluarkan barang N ke dalam list
+3 N: mengeluarkan index tempat dari barang N
+
+Constraints
+
+
+Output Format
+
+untuk queri 2, jika barang tidak ada print "Tidak ada di gudang"
+untuk queri 3, jika barang ada print index dari barang, jika tidak ada print "Tidak ada di gudang"
+
+Sample Input 0
+
+10
+1 48
+1 14
+1 40
+1 1
+1 62
+3 1
+3 14
+3 40
+2 14
+3 40
+
+Sample Output 0
+
+1
+2
+3
+2
+
+
 */
 
 #include <stdlib.h>
