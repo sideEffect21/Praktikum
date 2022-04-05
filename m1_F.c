@@ -1,3 +1,58 @@
+
+
+/*
+
+Di suatu ujian Ian dan Aan dicurigai menyontek. Rahel yang terkenal akan keadilannya ingin membuktikan bahwa Ian dan Aan mencontek saat ujian berlangsung. Rahel membuat sebuah program yang dapat mengecek kecurangan dalam ujian. Mereka berdua dianggap menyontek ketika jawaban dan jumlah soal mereka semua sama, tetapi terkadang Rahel salah menginputkan nilai jadi dia membuat fungsi undo yang bertuliskan "mundur".
+
+Input Format
+
+Baris pertama merupakan X jumlah soal yang mereka jawab
+
+Baris kedua berisi STRING nama atau STRING mundur dan Y sebagai nilai mereka berdua
+
+Constraints
+
+Output Format
+
+DIH TUKANG NYONTEK atau SIP SI PALING JUJUR
+
+Sample Input 0
+
+10
+IAN 40
+AAN 40
+IAN 78
+AAN 78
+IAN 66
+AAN 66
+IAN 50
+AAN 50
+IAN 56
+AAN 34
+
+Sample Output 0
+
+SIP SI PALING JUJUR
+
+Sample Input 1
+
+9
+IAN 40
+AAN 40
+IAN 78
+AAN 78
+IAN 66
+AAN 65
+mundur
+IAN 50
+AAN 50
+
+Sample Output 1
+
+DIH TUKANG NYONTEK
+
+
+*/
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
