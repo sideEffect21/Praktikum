@@ -8,7 +8,58 @@ nama dimasukkan kedalam soal dengan asumsi jika nama yang dijumpai lebih kecil g
  langkah sebelum root yang di cari) dari node dicari, jika node yang dicari berupa root maka printlah "Aku adalah Komandan 1 keluarga Rahel", 
  jika nama ibu yang dicari tidak ada, karena sifat pencariannya mencari dari node paling kiri hingga yang terakhir(sistem inorder) 
  maka akan sampai ke node paling ujung kanan yang didapat akan diprint menjadi ibu dari nama yang tidak ada tersebut.*/
+/*
+Rahel ternyata selama salah sangka dengan dirinya maka dari itu dia mengubah namanya menjadi RahelChan.
 
+Karena hal tersebut maka rahel sangat ingin mempelajari silsilah dari Keluarga Besarnya maka dari itu dia membuat sebuah program yang dimana dapat menginputkan nama-nama dari anggota keluarganya serta cara untuk mencari posisi dari anggota keluarga tersebut.
+
+NB:
+
+Karena Rahel itu baik, ramah, rajin menabung, berbakti kepada orangtua, tidak menumpuk pakaian kotor, strukdat selalu ac semua, maka dia mengingatkan kita semua bahwa keluarganya itu tidak memiliki nama orang yang sama
+
+Jadi kalau dia lalai memasukkan nama keluarganya lebih dari 1 kali yang masuk jadinya 1 aja okeehhh Maafkan Rahelll lagi ya :((
+
+Input Format
+
+    Baris pertama adalah N T yang merupakan banyaknya jumlah test case.
+    N baris berikutnya berisi S, yaitu nama anggota keluarga Rahel.
+    T baris berikutnya memiliki format masukan “O S”, O akan dijelaskan nanti. Sedangkan S merupakan nama salah satu anggota keluarga Rahel.
+    Cara memasukkan S kedalam BST menggunakan STRCMP, jika node yang dijumpai lebih kecil geser ke kiri. Jika lebih besar geser ke kanan.
+
+Constraints
+
+    S selalu lowercase
+
+Output Format
+
+Untuk setiap test case terdapat dua tipe, jika O adalah “anak” maka keluarkan child node dari S. Jika memiliki dua child keluarkan sebagai “A B”, A adalah child kiri sedangkan B adalah child kanan. Jika salah satu tidak ada ganti dengan “-“. Jika tidak memiliki child keluarkan Anak-aNakkuu lagi otw Gan. Jika O adalah “ibu”, keluarkan parent dari S. Jika S adalah root dari BST keluarkan Aku adalah Komandan 1 keluarga Rahel
+
+Sample Input 0
+
+8 5
+oppung
+poltak 
+rahel
+darwis
+angkasa
+reinata
+michelle
+tio
+anak rahel
+ibu oppung
+anak tio
+ibu darwis
+anak darwis
+
+Sample Output 0
+
+reinata -
+Aku adalah Komandan 1 keluarga Rahel
+Anak-aNakkuu lagi otw Gan
+oppung
+michelle angkasa
+
+*/
 
 
 #include <stdlib.h>
