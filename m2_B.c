@@ -2,6 +2,42 @@
 Lakukan hal yang sama pada ruas kiri dan kanan dari bagian tengah
  array/deretan hingga semua bilangan masuk kedalam BST.*/
 
+/*
+ebuah Binary Search Tree bisa saja memiliki bentuk seperti gambar di atas. Agar tidak mengubah sebuah BST menjadi linked list, 
+buatlah program yang dapat mencegah hal tersebut.
+
+Input Format
+
+Sebuah baris yang berisi bilangan T yang menyatakan banyaknya bilangan N, diikuti dengan sebaris deret N bilangan yang telah diurutkan.
+
+Constraints
+
+1 ≤ T, N ≤ 10000
+
+Output Format
+
+Hasil transversal preorder dari BST tersebut.
+
+Sample Input 0
+
+5
+1 2 3 4 5
+
+Sample Output 0
+
+3 1 2 4 5 
+
+Sample Input 1
+
+4
+2 3 4 5
+
+Sample Output 1
+
+3 2 4 5 
+
+*/
+
  #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
